@@ -12,6 +12,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
@@ -75,8 +83,141 @@
         </p>
       </section>
       <section class="reviews"></section>
-      <section class="your order"></section>
+      <section class="your-order">
+        <div class="container order-container">
+          <div class="title-wrap">
+            <h2 class="order-title">
+              Fresh <span class="first-title-part">Harvest</span> Box has got
+              you covered
+            </h2>
+            <p class="order-text">
+              Our boxes are packed with delicious, nutritious vegetables,
+              perfect for anyone looking to eat healthier or support local
+              farmers. Order your box today and start enjoying the best that
+              nature has to offer!
+            </p>
+          </div>
+          <div class="modal order-part">
+            <p class="modal-title">
+              Ordering <span class="second-title-part">from us</span> is quick
+              and easy! Fill out
+              <span class="third-title-part">the form</span> below and we will
+              contact you !
+            </p>
+            <form class="modal-form">
+              <div class="modal-field">
+                <label for="user-name" class="modal-label"></label>
+                <input
+                  type="text"
+                  class="modal-input"
+                  id="user-name"
+                  name="user-name"
+                  placeholder="Full Name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="modal-field">
+                <label for="user-email" class="modal-label"></label>
+                <input
+                  type="email"
+                  class="modal-input"
+                  name="user-email"
+                  placeholder="Email"
+                  required
+                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                />
+              </div>
+              <div class="modal-field-textarea">
+                <label for="user-comment" class="modal-label"></label>
+                <textarea
+                  class="modal-textarea"
+                  id="user-comment"
+                  name="user-comment"
+                  placeholder="Comment"
+                ></textarea>
+              </div>
+              <button type="submit" class="modal-btn">Send</button>
+            </form>
+          </div>
+          <div class="soc-network">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="/img/order-desk.webp 1x, /img/order-desk@2x.webp 2x"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="/img/order-tab.webp 1x, /img/order-tab@2x.webp 2x"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="/img/order-mob.webp 1x, /img/order-mob@2x.webp 2x"
+              />
+              <img src="/img/order-desk.webp" alt="soc-network-picture" />
+            </picture>
+            <p class="soc-network-text">Follow us on our social networks:</p>
+            <ul class="soc-list">
+              <li class="soc-item">
+                <a class="soc-link" href="https://www.instagram.com/goitclub/"
+                  >instagram</a
+                >
+              </li>
+              <li class="soc-item">
+                <a class="soc-link" href="https://www.facebook.com/goITclub/"
+                  >facebook</a
+                >
+              </li>
+              <li class="soc-item">
+                <a
+                  class="soc-link link-youtube"
+                  href="https://www.youtube.com/c/GoIT"
+                  >youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="page-footer">
+      <div class="container footer-container">
+        <div class="logo-wrap">
+          <a class="footer-logo" href="./index.html">grin harvest</a>
+          <p class="logo-text">
+            Whether you're looking for a healthy snack or a thoughtful gift, our
+            fruit baskets are the perfect choice.
+          </p>
+        </div>
+        <div class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">how it works</li>
+            <li class="footer-nav-item">vegetables</li>
+            <li class="footer-nav-item">reviews</li>
+          </ul>
+        </div>
+        <address class="footer-contacts">
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href="tel:+380684439426"
+                >+38 (068) 443-94-26</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <a class="footer-contacts-link" href=""
+                >1678 S. Pioneer Road Salt <br />
+                Lake City UT 84104</a
+              >
+            </li>
+          </ul>
+        </address>
+
+        <div class="privacy-wrap">
+          <a class="privacy-item" href="">Privacy Policy</a>
+          <a class="privacy-item" href="">Cookie settings</a>
+          <a class="privacy-item" href="">©Green Harvest 2023</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
